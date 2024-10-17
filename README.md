@@ -4,12 +4,10 @@ A simple Flutter application representing the use of auto_route package.
 
 ## Resources
 
-**Docs**
-
+**Docs:**
 https://pub.dev/packages/auto_route
 
-**Tutorial**
-
+**Tutorial:**
 https://www.youtube.com/watch?v=c84S_tB-Vz8&list=PLgN5dqz3mq5yEgaQhm9GHb-KkeeijsLNb
 
 ## Creating a router
