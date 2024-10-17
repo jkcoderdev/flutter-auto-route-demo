@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 @RoutePage()
 class HomePage extends StatelessWidget {
@@ -20,6 +21,13 @@ class HomePage extends StatelessWidget {
                   router.pushNamed('/test');
                 },
                 child: const Text('Test page')
+            ),
+            ElevatedButton(
+                onPressed: () async {
+                  SharedPreferences preferences = await SharedPreferences.getInstance();
+                  preferences.clear();
+                },
+                child: const Text('Log out')
             )
           ],
         )

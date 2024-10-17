@@ -1,6 +1,9 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:auto_route_demo/routes/guard/auth_guard.dart';
+import 'package:flutter/material.dart';
 
 import '../pages/home_page.dart';
+import '../pages/login_page.dart';
 import '../pages/test_page.dart';
 
 part 'app_router.gr.dart';
@@ -18,8 +21,13 @@ class AppRouter extends RootStackRouter {
       initial: true
     ),
     AutoRoute(
+      page: LoginRoute.page,
+      path: '/login'
+    ),
+    AutoRoute(
       page: TestRoute.page,
-      path: '/test'
+      path: '/test',
+      guards: [AuthGuard()]
     )
   ];
 }
