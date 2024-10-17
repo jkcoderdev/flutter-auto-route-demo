@@ -3,6 +3,7 @@
 A simple Flutter application representing the use of auto_route package.
 
 ## Resources
+
 Docs
 https://pub.dev/packages/auto_route
 
